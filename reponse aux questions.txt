@@ -1,0 +1,40 @@
+Partie 1 — Préparation de l’environnement
+
+Quelle est la commande permettant d’installer une bibliothèque avec pip ?
+pip install nom_de_la_bibliothèque , Dans un notebook, on ajoute ! devant : !pip install nltk spacy scikit-learn
+
+Quelle est la différence entre nltk et spaCy selon vous ?
+NLTK est une bibliothèque qui propose plusieurs outils pour le traitement du langage naturel, comme la tokenisation, les stopwords et le stemming.
+
+spaCy est une bibliothèque plus spécialisée dans le traitement automatique du langage. Elle propose des modèles linguistiques permettant notamment de faire la tokenisation, la lemmatisation et l'analyse grammaticale.
+
+Partie 2 — Nettoyage du texte
+
+Pourquoi est-il important de mettre le texte en minuscules ?
+Mettre le texte en minuscules permet de considérer les mots écrits avec des majuscules et des minuscules comme le même mot,Cela facilite l'analyse et évite de traiter plusieurs fois le même mot.
+Donnez un exemple de résultat avant et après nettoyage.
+Avant :"Aujourd'hui, il fait CHAUD ! #Nature"
+Après :"aujourd'hui il fait chaud nature"
+
+Partie 3 — Tokenisation et Stopwords
+
+Que représentent les stopwords ?
+Ce sont les mots très fréquents qui portent peu de sens (le, la, il, et, au, est...). On les retire pour garder les mots importants.
+Quelle proportion du texte original est supprimée après leur retrait ?
+proportion = (nb_avant - nb_apres) / nb_avant * 100
+
+Partie 4 — Lemmatisation
+
+Quelle est la différence entre stemming et lemmatisation ?
+Stemming : coupe la fin du mot avec des règles simples. C'est rapide mais le résultat n'est pas toujours un vrai mot (visiter donne visit, belle peut donner bell).
+
+Lemmatisation : utilise un dictionnaire et la grammaire pour retrouver la forme de base, qui est un vrai mot (visitent donne visiter, est donne être).
+
+Pourquoi cette étape est-elle importante avant l’analyse sémantique ?
+La lemmatisation permet de regrouper différentes formes d'un même mot sous une forme de base,éviter de compter le même sens plusieurs fois.
+
+
+
+
+
+
